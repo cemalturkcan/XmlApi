@@ -1,0 +1,35 @@
+server:
+  port: 5050
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+        - id: xmlApi
+          uri: http://localhost:9091
+          predicates:
+            - Path= /*/*
+            #==========================
+
+  application:
+    name: gateway
+
+
+  management:
+    endpoint:
+      gateway:
+        enabled: true
+    endpoints:
+      web:
+        exposure:
+          include: gateway
