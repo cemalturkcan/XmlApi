@@ -1,4 +1,4 @@
-Bu projede https://postman.mobildev.com/#21bcdc90-ea01-4d97-92f3-878422b1fd77 ayfasında yer alan Mobildev XML API entegrasyonu yapılmıştır.
+Bu projede https://postman.mobildev.com/#21bcdc90-ea01-4d97-92f3-878422b1fd77 sayfasında yer alan Mobildev XML API entegrasyonu yapılmıştır.
 
 
 http://localhost:5050/getUser/restTemplate
